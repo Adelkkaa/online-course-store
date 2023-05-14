@@ -18,6 +18,15 @@ const BrandBar = observer(() => {
           {brand.name}
         </Card>
       ))}
+      <Card
+        key={'onSelectBrand'}
+        style={{ cursor: 'pointer' }}
+        className="p-3"
+        onClick={() => device.setSelectedBrand({})}
+        border={'light'}
+      >
+        Сбросить
+      </Card>
     </Form>
   );
 });

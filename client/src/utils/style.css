@@ -1,0 +1,114 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap');
+
+  .filterPage {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  
+  
+  .filter {
+    width: 500px;
+    border-radius: 30px;
+    padding: 40px;
+    background-color: #fff;
+    position: relative;
+  }
+    
+  .filter .result {
+    text-align: center;
+  }
+
+  .filter .result button {
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 30px;
+    border: 0;
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: darken(#ff006e, 3%);
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  .filter .result h2 {
+    margin-bottom: 0;
+  }
+
+  .filter .result img {
+    width: 150px;
+  }
+
+  .filter .progress {
+    height: 10px;
+    border-radius: 30px;
+    background-color: rgb(232, 232, 232);
+    margin-bottom: 25px;
+  }
+
+  .filter .progress__inner {
+    height: 100%;
+    border-radius: 30px;
+    width: 80%;
+    background: rgb(18, 231, 48);
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(90deg, rgba(18, 231, 48, 1) 0%, rgba(0, 212, 255, 1) 100%);
+  }
+
+  .filter:before,
+  .filter:after {
+    content: '';
+    display: block;
+    height: 50px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .filter:before {
+    width: 95%;
+    bottom: -10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 0;
+  }
+
+  .filter:after {
+    width: 90%;
+    bottom: -20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 1;
+  }
+
+  .filter h1 {
+    margin: 0;
+  }
+
+  .filter ul {
+    margin-top: 30px;
+    list-style: none;
+    padding: 0;
+  }
+
+  .filter ul li {
+    padding: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .filter ul li :hover {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+  }

@@ -1,5 +1,5 @@
-const { Device, BasketDevice, Basket } = require("../models/models");
-const sequelize = require("../db");
+const { Device, BasketDevice, Basket } = require('../models/models');
+const sequelize = require('../db');
 
 class BasketController {
   // ------ CRUD корзины ------ //
@@ -30,10 +30,8 @@ class BasketController {
 
   async deleteOneBasketItem(req, res) {
     const { id } = req.query;
-    const post = await sequelize.query(
-      `DELETE FROM basket_devices WHERE id = ${id}`
-    );
-    return res.json("Was deleted");
+    const post = await sequelize.query(`DELETE FROM basket_devices WHERE id = ${id}`);
+    return res.json('Was deleted');
   }
 }
 

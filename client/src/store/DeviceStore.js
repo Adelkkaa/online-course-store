@@ -1,4 +1,4 @@
-import { makeAutoObservable } from "mobx";
+import { makeAutoObservable } from 'mobx';
 
 export default class DeviceStore {
   constructor() {
@@ -59,12 +59,12 @@ export default class DeviceStore {
   }
 
   get selectedType() {
-    this.setPage(1);
+    // this.setPage(1);
     return this._selectedType;
   }
 
   get selectedBrand() {
-    this.setPage(1);
+    // this.setPage(1);
     return this._selectedBrand;
   }
 
